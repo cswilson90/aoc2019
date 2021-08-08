@@ -1,6 +1,6 @@
 import { readNumbers } from "./util/input.js";
 
-let moduleMasses = readNumbers("input/day1/input.txt");
+let moduleMasses = readNumbers("input/day1.txt");
 
 /*
  * Part 1

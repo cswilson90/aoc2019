@@ -1,7 +1,7 @@
 import { readIntCode } from "./util/input.js";
 import { IntcodeProgram } from "./util/intcodeprogram.js";
 
-const intCode = readIntCode('./input/day2/input.txt');
+const intCode = readIntCode('./input/day2.txt');
 const program = new IntcodeProgram(intCode);
 
 /*
