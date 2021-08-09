@@ -1,7 +1,7 @@
 import fs from "fs";
 
 export function readNumbers(file: string): number[] {
-    const lines = readFile(file);
+    const lines = readStrings(file);
 
     let numbers: number[] = []
     let lineNum = 0;
@@ -22,7 +22,7 @@ export function readNumbers(file: string): number[] {
 }
 
 export function readIntCode(file: string): number[] {
-    const lines = readFile(file);
+    const lines = readStrings(file);
 
     if (lines.length == 0) {
         throw `Intcode input file ${file} contains no lines`;
@@ -37,7 +37,7 @@ export function readIntCode(file: string): number[] {
     });
 }
 
-function readFile(file: string): string[] {
+export function readStrings(file: string): string[] {
     const data = fs.readFileSync(file, 'utf8');
     return data.split("\n");
 }
